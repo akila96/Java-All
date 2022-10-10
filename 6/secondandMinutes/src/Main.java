@@ -11,7 +11,7 @@ public class Main {
 
         if ((minutes<0) || (second < 0) ||(second > 59))
         {
-             return "invalid number";
+            return "invalid number";
         }
         long hours= minutes / 60;
         long remainingMinutes = minutes % 60;
@@ -19,14 +19,14 @@ public class Main {
     }
 
     private  static String getDurationString(long second){
-      if (second < 0){
-          return  "invalid number";
-      }
+        if (second < 0){
+            return  "invalid number";
+        }
 
-      long minutes =second / 60;
-      long remainngSeconds = second % 60 ;
-      String x = getDurationString(minutes,remainngSeconds);
-      return x;
+        long minutes =second / 60;
+        long remainngSeconds = second % 60 ;
+        String x = getDurationString(minutes,remainngSeconds);
+        return x;
 
     }
 }
