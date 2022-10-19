@@ -3,11 +3,11 @@ public class VipPerson {
     private double creditLimit;
     private String emailAddress;
 
-    public VipPerson(){
+    public VipPerson(){   //  <----- Empty constructor
        this("Default name" , 50000.00,"Default@gmail.com");
     }
 
-   public  VipPerson(String name, double creditLimit){
+   public  VipPerson(String name, double creditLimit){  //   <----- Pass two values Constructor
       this(name,creditLimit,"unknown@gmail.com");
    }
 
